@@ -247,7 +247,6 @@ $$
 4. ## Invers matriks 2×2
 
    tetap mengikuti rumus umum: hanya saja bentuk adjoint-nya lebih sederhana (tukar diagonal, ubah tanda elemen luar).
-
    Determinan wajib dihitung di awal karena menjadi pembagi; kalau salah di sini, semua hasil ikut salah.
    adj(A) berasal dari kofaktor lalu transpose, meskipun pada 2×2 terlihat seperti “langsung jadi”.
    Karena determinan ≠ 0, matriks pasti memiliki invers (tidak singular).
@@ -259,7 +258,7 @@ $$
    Determinan = −2 memastikan matriks bisa diinverskan dan menjadi faktor pembagi.
    Struktur matriks yang punya banyak nol sebenarnya membantu mempercepat perhitungan minor.
 
-6. ## Langkah awal tetap sama: cek determinan sebelum lanjut ke adjoint.
+6. ## Cek determinan sebelum lanjut ke adjoint.
    Hasil determinan = 0 menunjukkan adanya ketergantungan linear antar baris.
    Karena rumus invers membagi dengan determinan, maka pembagian tidak bisa dilakukan.
    Akibatnya, meskipun adj(A) bisa saja dihitung, invers matriks tidak ada (singular).
