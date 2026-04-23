@@ -2,6 +2,9 @@
 version: 1
 project:
   id: d308819e-ddee-4562-af61-e8fa63756e84
+  toc:
+    - file: ./kal.ipynb
+    - file: ./tugas2/tugas2.md
   # title:
   # description:
   # keywords: []
