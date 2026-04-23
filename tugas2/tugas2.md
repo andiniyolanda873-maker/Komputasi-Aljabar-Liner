@@ -244,14 +244,17 @@ $$
 A^{-1}\ \text{tidak ada}
 $$
 
-4. ## Invers matriks 2×2 tetap mengikuti rumus umum: hanya saja bentuk adjoint-nya lebih sederhana (tukar diagonal, ubah tanda elemen luar).
+4. ## Invers matriks 2×2
+
+   tetap mengikuti rumus umum: hanya saja bentuk adjoint-nya lebih sederhana (tukar diagonal, ubah tanda elemen luar).
 
    Determinan wajib dihitung di awal karena menjadi pembagi; kalau salah di sini, semua hasil ikut salah.
    adj(A) berasal dari kofaktor lalu transpose, meskipun pada 2×2 terlihat seperti “langsung jadi”.
    Karena determinan ≠ 0, matriks pasti memiliki invers (tidak singular).
 
-5. ## Proses utama ada di pembentukan kofaktor, yaitu menghitung minor 2×2 lalu memberi tanda sesuai pola (+ − + / − + − / + − +).
+5. ## Menghitung minor 2×2
 
+   Proses utama ada di pembentukan kofaktor, yaitu menghitung minor 2×2 lalu memberi tanda sesuai pola (+ − + / − + − / + − +).
    adj(A) diperoleh dari transpose matriks kofaktor, jadi posisi elemen berubah (ini sering jadi sumber kesalahan).
    Determinan = −2 memastikan matriks bisa diinverskan dan menjadi faktor pembagi.
    Struktur matriks yang punya banyak nol sebenarnya membantu mempercepat perhitungan minor.
