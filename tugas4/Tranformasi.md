@@ -1,4 +1,4 @@
-#Perhitungan Matriks Transformasi Geometri pada Bidang 2D\*\*
+#Perhitungan Matriks Transformasi Geometri pada Bidang 2D
 
 ### Menggunakan Metode Aljabar Linear & Koordinat Homogen
 
@@ -335,5 +335,6 @@ Transformasi bersifat lokal, bukan global
 
 ---
 
-**Kesimpulan:**
+## Kesimpulan:
+
 Dari proses di atas dapat disimpulkan bahwa perpindahan titik-titik pada bidang 2D dimodelkan menggunakan transformasi translasi yang ditentukan dari selisih koordinat awal dan akhir, dimana semua transformasi yang terjadi merupakan translasi murni sehingga tidak mengubah bentuk dan ukuran objek, serta dengan memanfaatkan koordinat homogen seluruh transformasi dapat dituliskan dalam bentuk matriks yang seragam sehingga lebih sederhana untuk dihitung, digabung, dan diterapkan.
