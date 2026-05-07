@@ -5,7 +5,7 @@ project:
   toc:
     - file: ./tugas3/tugas-kal-3.md
     - file: ./tugas4/Tranformasi.md
-    - file: ./tugas5/Tranformasi.md
+    - file: ./tugas5/visualisasi_cermin.py
 
   # title:
   # description:
