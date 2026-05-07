@@ -1,11 +1,7 @@
-# Visualisasi Transformasi Cermin
+# Visualisasi Transformasi
 
-## Transformasi terhadap Sumbu-X
-
-\[
-(x,y)\rightarrow(x,-y)
-\]
-
-## Animasi
-
-![Animasi](cermin.gif)
+<iframe
+src="./visualisasi.html"
+width="800"
+height="800">
+</iframe>
