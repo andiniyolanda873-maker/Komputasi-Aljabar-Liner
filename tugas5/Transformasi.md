@@ -1,7 +1,117 @@
-# Visualisasi Transformasi
+# Visualisasi Transformasi Cermin
 
-<iframe
-src="./visualisasi.html"
-width="800"
-height="800">
-</iframe>
+<html>
+
+<head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="canvas"></div>
+
+<script>
+
+let points = [
+    [2,1],
+    [3,1],
+    [3,4],
+    [2,4]
+];
+
+function setup(){
+
+    let cnv = createCanvas(700,700);
+
+    cnv.parent("canvas");
+
+}
+
+function draw(){
+
+    background(255);
+
+    translate(width/2,height/2);
+
+    scale(50,-50);
+
+    stroke(220);
+
+    for(let i=-10;i<=10;i++){
+
+        line(i,-10,i,10);
+        line(-10,i,10,i);
+
+    }
+
+    stroke(0);
+    strokeWeight(0.05);
+
+    line(-10,0,10,0);
+    line(0,-10,0,10);
+
+    stroke("purple");
+    line(-10,0,10,0);
+
+    let gerak = sin(frameCount * 0.03) * 1.5;
+
+    let objek = [];
+
+    for(let p of points){
+
+        objek.push([
+            p[0],
+            p[1] + gerak
+        ]);
+
+    }
+
+    let cermin = [];
+
+    for(let p of objek){
+
+        cermin.push([
+            p[0],
+            -p[1]
+        ]);
+
+    }
+
+    stroke("blue");
+    fill("blue");
+    strokeWeight(0.08);
+
+    beginShape();
+
+    for(let p of objek){
+
+        vertex(p[0],p[1]);
+        circle(p[0],p[1],0.15);
+
+    }
+
+    endShape(CLOSE);
+
+    stroke("red");
+    fill("red");
+
+    beginShape();
+
+    for(let p of cermin){
+
+        vertex(p[0],p[1]);
+        circle(p[0],p[1],0.15);
+
+    }
+
+    endShape(CLOSE);
+
+}
+
+</script>
+
+</body>
+
+</html>
