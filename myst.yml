@@ -5,7 +5,7 @@ project:
   toc:
     - file: ./tugas3/tugas-kal-3.md
     - file: ./tugas4/Tranformasi.md
-    - file: ./tugas5/transformasi_cermin.ipynb/index.md
+    - file: ./tugas5/index.html
 
   # title:
   # description:
