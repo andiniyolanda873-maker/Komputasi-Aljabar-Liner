@@ -3,34 +3,45 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # =========================================================
+
 # VISUALISASI TRANSFORMASI CERMIN TERHADAP SUMBU-X
+
 # =========================================================
+
 # Rumus:
+
 # (x, y) -> (x, -y)
+
 # =========================================================
 
 # ---------------------------------------------------------
+
 # TITIK OBJEK ASLI
+
 # ---------------------------------------------------------
 
 points = np.array([
-    [2, 1],   # G
-    [3, 1],   # H
-    [3, 4],   # C
-    [2, 4],   # B
-    [2, 1]
+[2, 1], # G
+[3, 1], # H
+[3, 4], # C
+[2, 4], # B
+[2, 1]
 ], dtype=float)
 
 labels = ["G", "H", "C", "B"]
 
 # ---------------------------------------------------------
+
 # MEMBUAT WINDOW
+
 # ---------------------------------------------------------
 
 fig, ax = plt.subplots(figsize=(10, 10))
 
 # ---------------------------------------------------------
+
 # PENGATURAN KOORDINAT
+
 # ---------------------------------------------------------
 
 ax.set_xlim(-6, 8)
@@ -41,7 +52,9 @@ ax.set_aspect('equal')
 ax.grid(True, linestyle='--', linewidth=0.5, alpha=0.6)
 
 # ---------------------------------------------------------
+
 # SUMBU X DAN Y
+
 # ---------------------------------------------------------
 
 ax.axhline(0, color='black', linewidth=2)
@@ -54,51 +67,59 @@ ax.text(7.2, 0.3, "SUMBU X", fontsize=12, fontweight='bold')
 ax.text(0.3, 5.3, "SUMBU Y", fontsize=12, fontweight='bold')
 
 # ---------------------------------------------------------
+
 # GARIS CERMIN
+
 # ---------------------------------------------------------
 
 ax.axhline(
-    y=0,
-    color='purple',
-    linestyle='--',
-    linewidth=3,
-    label='Garis Cermin'
+y=0,
+color='purple',
+linestyle='--',
+linewidth=3,
+label='Garis Cermin'
 )
 
 # ---------------------------------------------------------
+
 # GARIS OBJEK ASLI
+
 # ---------------------------------------------------------
 
 garis_asli, = ax.plot(
-    [],
-    [],
-    'bo-',
-    linewidth=3,
-    markersize=9,
-    label='Objek Asli'
+[],
+[],
+'bo-',
+linewidth=3,
+markersize=9,
+label='Objek Asli'
 )
 
 # ---------------------------------------------------------
+
 # GARIS BAYANGAN CERMIN
+
 # ---------------------------------------------------------
 
 garis_cermin, = ax.plot(
-    [],
-    [],
-    'ro-',
-    linewidth=3,
-    markersize=9,
-    label='Bayangan Cermin'
+[],
+[],
+'ro-',
+linewidth=3,
+markersize=9,
+label='Bayangan Cermin'
 )
 
 # ---------------------------------------------------------
+
 # LABEL TITIK
+
 # ---------------------------------------------------------
 
 label_asli = []
 label_cermin = []
 
-for _ in labels:
+for \_ in labels:
 
     t1 = ax.text(
         0,
@@ -132,24 +153,28 @@ for _ in labels:
     label_cermin.append(t2)
 
 # ---------------------------------------------------------
+
 # PANEL PENJELASAN
+
 # ---------------------------------------------------------
 
 penjelasan = fig.text(
-    0.02,
-    0.88,
-    "",
-    fontsize=11,
-    verticalalignment='top',
-    bbox=dict(
-        facecolor='white',
-        edgecolor='black',
-        alpha=0.95
-    )
+0.02,
+0.88,
+"",
+fontsize=11,
+verticalalignment='top',
+bbox=dict(
+facecolor='white',
+edgecolor='black',
+alpha=0.95
+)
 )
 
 # =========================================================
+
 # FUNGSI ANIMASI
+
 # =========================================================
 
 def update(frame):
@@ -244,41 +269,49 @@ def update(frame):
     )
 
 # =========================================================
+
 # MENJALANKAN ANIMASI
+
 # =========================================================
 
 animasi = FuncAnimation(
-    fig,
-    update,
-    frames=1000,
-    interval=20,
-    blit=True
+fig,
+update,
+frames=1000,
+interval=20,
+blit=True
 )
 
 # ---------------------------------------------------------
+
 # JUDUL
+
 # ---------------------------------------------------------
 
 plt.title(
-    "Visualisasi Transformasi Cermin terhadap Sumbu-X",
-    fontsize=15,
-    fontweight='bold'
+"Visualisasi Transformasi Cermin terhadap Sumbu-X",
+fontsize=15,
+fontweight='bold'
 )
 
 plt.legend(loc='lower right')
 
 # =========================================================
+
 # SIMPAN MENJADI GIF
+
 # =========================================================
 
 animasi.save(
-    "cermin_sumbu_x.gif",
-    writer="pillow",
-    fps=30
+"cermin_sumbu_x.gif",
+writer="pillow",
+fps=30
 )
 
 # =========================================================
+
 # TAMPILKAN
+
 # =========================================================
 
 plt.show()
