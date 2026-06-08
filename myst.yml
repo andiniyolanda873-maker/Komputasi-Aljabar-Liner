@@ -8,6 +8,7 @@ project:
     - file: ./tugas3/tugas-kal-3.md
     - file: ./tugas\Traformasi.md
     - file: ./tugas5/Dekomposisi_Matriks.md
+    - file: ./tugas/invers-matriks-A.ipynb
 
   # title:
   # description:
