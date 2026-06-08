@@ -3,8 +3,9 @@ version: 1
 project:
   id: d308819e-ddee-4562-af61-e8fa63756e84
   toc:
+    - file: ./tugas1/Persamaan-Linier.ipynb
     - file: ./tugas3/tugas-kal-3.md
-    - file: ./tugas4/Tranformasi.md
+    - file: ./tugas\]ranformasi.md
     - file: ./tugas5/Dekomposisi_Matriks.md
 
   # title:
