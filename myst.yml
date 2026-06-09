@@ -5,7 +5,7 @@ project:
   toc:
     - file: ./tugas1/Persamaan-Linier.ipynb
     - file: ./tugas2/eliminasi-gaussian.ipynb
-    - file: ./tugas3/tugas-kal-3.md
+    - file: ./tugas3/invers-matriks-A.ipynb
     - file: ./tugas\Traformasi.md
     - file: ./tugas5/Dekomposisi_Matriks.md
     - file: ./tugas/invers-matriks-A.ipynb
