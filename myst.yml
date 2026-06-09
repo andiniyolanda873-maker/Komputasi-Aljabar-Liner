@@ -8,6 +8,7 @@ project:
     - file: ./tugas3/invers-matriks-A.ipynb
     - file: ./tugas4/Determinan-Dan-Adjoin.md
     - file: ./tugas5/Tranformasi-Matriks.ipynb
+    - file: ./tugas6/Visualisasi-Transformasi Cermin.ipynb
 
   # title:
   # description:
