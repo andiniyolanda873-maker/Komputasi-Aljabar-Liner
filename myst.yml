@@ -7,7 +7,7 @@ project:
     - file: ./tugas2/eliminasi-gaussian.ipynb
     - file: ./tugas3/invers-matriks-A.ipynb
     - file: ./tugas4/Determinan-Dan-Adjoin.md
-    - file: ./tugas5/Tranformasi.md
+    - file: ./tugas5/Tranformasi-Matriks.ipynb
 
   # title:
   # description:
