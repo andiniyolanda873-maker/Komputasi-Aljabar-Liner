@@ -11,6 +11,7 @@ project:
     - file: ./tugas6/Visualisasi-Transformasi Cermin.ipynb
     - file: ./tugas7/Dekomposisi_Matriks.md
     - file: ./tugas8/SVD.ipynb
+    - file: ./tugas9/Tranposisi&matriks.ipynb
 
   # title:
   # description:
