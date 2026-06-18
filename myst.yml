@@ -13,6 +13,7 @@ project:
     - file: ./tugas8/SVD.ipynb
     - file: ./tugas9/Tranposisi&matriks.ipynb
     - file: ./tugas10/Dekposisi.ipynb
+    - file: ./tugas11/Tugas-Akhir.ipynb
 
   # title:
   # description:
