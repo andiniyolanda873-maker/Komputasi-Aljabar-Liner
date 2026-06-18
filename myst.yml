@@ -12,6 +12,7 @@ project:
     - file: ./tugas7/Dekomposisi_Matriks.md
     - file: ./tugas8/SVD.ipynb
     - file: ./tugas9/Tranposisi&matriks.ipynb
+    - file: ./tugas10/Dekposisi.ipynb
 
   # title:
   # description:
